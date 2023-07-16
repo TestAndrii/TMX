@@ -1,0 +1,22 @@
+{
+    "name": "composer/php",
+    "type": "project",
+    "description": "TMX test job.",
+    "keywords": ["php", "TMX"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Finko",
+            "email": "andrey.finko@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "*",
+        "nesbot/carbon": "^2.68"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
