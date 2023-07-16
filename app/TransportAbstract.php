@@ -47,9 +47,31 @@ abstract class TransportAbstract implements TransportInterface
     {
         return $distance * $driverCategory * $perKilometerRate;
     } 
-    
+
+
+    // Fuel
     public function fuelCostTravel(int $travelDistance): float
     {
         return ($travelDistance / 100) * $this->fuelConsumption100km * $this->fuelCost;
+    }
+    public function getFuelCost(): int
+    {
+        return $this->fuelCost;
+    }
+    public function setFuelCost(int $fuelCost): int
+    {
+        $this->fuelCost = $fuelCost;
+        return $this->fuelCost;
+    }
+
+    // Vehicle Depreciation Rate
+    public function getVehicleDepreciationRate(): int
+    {
+        return $this->vehicleDepreciationRate;
+    }
+    public function setVehicleDepreciationRate(int $vehicleDepreciationRate): int
+    {
+        $this->vehicleDepreciationRate = $vehicleDepreciationRate;
+        return $this->vehicleDepreciationRate;
     }
 }
