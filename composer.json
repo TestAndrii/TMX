@@ -11,8 +11,7 @@
         }
     ],
     "require": {
-        "php": "*",
-        "nesbot/carbon": "^2.68"
+        "php": "*"
     },
     "autoload": {
         "psr-4": {
